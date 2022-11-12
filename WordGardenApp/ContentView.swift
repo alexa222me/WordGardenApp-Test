@@ -32,8 +32,6 @@ struct ContentView: View {
               }
             .padding(.horizontal)
             
-            .ignoresSafeArea(edges: .bottom)
-            
             Spacer()
             
             Text(gameStatusMessage)
@@ -79,7 +77,7 @@ struct ContentView: View {
                 .scaledToFit()
         }
         
-        .padding()
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 
